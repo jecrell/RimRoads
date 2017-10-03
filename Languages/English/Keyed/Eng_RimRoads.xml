@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<RimRoads_BuildRoad>Build Road</RimRoads_BuildRoad>
+<RimRoads_BuildRoadDesc>Make your caravan attempt to construct a road segment.</RimRoads_BuildRoadDesc>
+<RimRoads_BuildRoadFinished>{0} has successfully finished a road segment.</RimRoads_BuildRoadFinished>
+<RimRoads_NoRoadsConstructable>None available. (Research Required)</RimRoads_NoRoadsConstructable>
+<RimRoads_DeconstructRoad>Deconstruct Road</RimRoads_DeconstructRoad>
+<RimRoads_DeconstructRoadDesc>Removes the road from this location.</RimRoads_DeconstructRoadDesc>
+<RimRoads_DeconstructionFinished>{0} has successfully removed the road.</RimRoads_DeconstructionFinished>
+</LanguageData>

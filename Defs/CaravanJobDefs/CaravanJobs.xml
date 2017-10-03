@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JecsTools.CaravanJobDef>
+    <defName>RimRoads_JobConstructRoads</defName>
+    <driverClass>RimRoads.CaravanJobDriver_ConstructRoads</driverClass>
+    <reportString>constructing TargetA.</reportString>
+  </JecsTools.CaravanJobDef>
+
+    <JecsTools.CaravanJobDef>
+      <defName>RimRoads_JobDeconstructRoad</defName>
+      <driverClass>RimRoads.CaravanJobDriver_DeconstructRoad</driverClass>
+      <reportString>deconstructing TargetA.</reportString>
+    </JecsTools.CaravanJobDef>
+
+</Defs>

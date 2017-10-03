@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RimRoads.RoadBuildableDef>
+    <defName>RimRoads_DirtRoadBuild</defName>
+    <label>dirt road</label>
+    <roadDef>DirtRoad</roadDef>
+    <costList />
+    <stuffCategories/>
+    <costStuffCount/>
+    <workToMake>63000</workToMake>
+    <researchPrerequisites>
+      <li>RimRoads_DirtRoads</li>
+    </researchPrerequisites>
+  </RimRoads.RoadBuildableDef>
+
+  <RimRoads.RoadBuildableDef>
+    <defName>RimRoads_StoneRoadBuild</defName>
+    <label>stone road</label>
+    <roadDef>StoneRoad</roadDef>
+    <costList />
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <workToMake>100500</workToMake>
+    <researchPrerequisites>
+      <li>RimRoads_StoneRoads</li>
+    </researchPrerequisites>
+  </RimRoads.RoadBuildableDef>
+
+  <RimRoads.RoadBuildableDef>
+    <defName>RimRoads_AsphaltRoadBuild</defName>
+    <label>asphalt road</label>
+    <roadDef>RimRoads_AsphaltRoad</roadDef>
+    <costList>
+      <Chemfuel>30</Chemfuel>
+    </costList>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>350</costStuffCount>
+    <workToMake>200000</workToMake>
+    <researchPrerequisites>
+      <li>RimRoads_AsphaltRoads</li>
+    </researchPrerequisites>
+  </RimRoads.RoadBuildableDef>
+
+  <RimRoads.RoadBuildableDef>
+    <defName>RimRoads_AsphaltHighwayBuild</defName>
+    <label>asphalt highway</label>
+    <roadDef>RimRoads_AsphaltHighway</roadDef>
+    <costList>
+      <Chemfuel>60</Chemfuel>
+    </costList>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>450</costStuffCount>
+    <workToMake>400000</workToMake>
+    <researchPrerequisites>
+      <li>RimRoads_Highways</li>
+    </researchPrerequisites>
+  </RimRoads.RoadBuildableDef>
+
+  <RoadDef>
+    <defName>RimRoads_AsphaltRoad</defName>
+    <label>asphalt road</label>
+    <ancientOnly>true</ancientOnly>
+    <priority>40</priority>
+    <movementCostMultiplier>0.5</movementCostMultiplier>
+    <tilesPerSegment>100</tilesPerSegment>
+    <pathingMode>Bulldoze</pathingMode>
+    <roadGenSteps>
+      <li Class="RoadDefGenStep_DryWithFallback">
+        <chancePerPositionCurve>
+          <points>
+            <li>(0, 1)</li>
+            <li>(1.4, 1)</li>
+            <li>(1.8, 0)</li>
+          </points>
+        </chancePerPositionCurve>
+        <fallback>Gravel</fallback>
+      </li>
+      <li Class="RoadDefGenStep_Place">
+        <chancePerPositionCurve>
+          <points>
+            <li>(0, 0.8)</li>
+            <li>(1.4, 0.8)</li>
+            <li>(2.0, 0)</li>
+          </points>
+        </chancePerPositionCurve>
+        <place>Gravel</place>
+      </li>
+      <li Class="RoadDefGenStep_Place">
+        <chancePerPositionCurve>
+          <points>
+            <li>(0, 0.8)</li>
+            <li>(1.4, 0.6)</li>
+            <li>(1.8, 0)</li>
+          </points>
+        </chancePerPositionCurve>
+        <place>BrokenAsphalt</place>
+      </li>
+      <li Class="RoadDefGenStep_Place">
+        <chancePerPositionCurve>
+          <points>
+            <li>(0, 0.001)</li>
+            <li>(2.2, 0.001)</li>
+            <li>(2.3, 0.5)</li>
+            <li>(2.5, 0)</li>
+          </points>
+        </chancePerPositionCurve>
+        <place>AncientConcreteBarrier</place>
+      </li>
+      <li Class="RoadDefGenStep_Place">
+        <chancePerPositionCurve>
+          <points>
+            <li>(0, 0)</li>
+            <li>(1.8, 0)</li>
+            <li>(2.3, 0.4)</li>
+            <li>(2.9, 0)</li>
+          </points>
+        </chancePerPositionCurve>
+        <place>AncientLamppost</place>
+        <periodicSpacing>12</periodicSpacing>
+        <proximitySpacing>4</proximitySpacing>
+      </li>
+    </roadGenSteps>
+    <worldRenderSteps>
+      <li>
+        <layer>Outline</layer>
+        <width>0.65</width>
+      </li>
+      <li>
+        <layer>Gravel</layer>
+        <width>0.5</width>
+      </li>
+      <li>
+        <layer>Asphalt</layer>
+        <width>0.25</width>
+      </li>
+    </worldRenderSteps>
+    <worldTransitionGroup>Asphalt</worldTransitionGroup>
+  </RoadDef>
+
+  <RoadDef>
+    <defName>RimRoads_AsphaltHighway</defName>
+    <label>asphalt highway</label>
+    <priority>50</priority>
+    <ancientOnly>true</ancientOnly>
+    <movementCostMultiplier>0.5</movementCostMultiplier>
+    <tilesPerSegment>400</tilesPerSegment>
+    <pathingMode>Bulldoze</pathingMode>
+    <roadGenSteps>
+      <li Class="RoadDefGenStep_Bulldoze">
+        <chancePerPositionCurve>
+          <points>
+            <li>(0, 1)</li>
+            <li>(4, 1)</li>
+            <li>(4, 0)</li>
+          </points>
+        </chancePerPositionCurve>
+      </li>
+      <li Class="RoadDefGenStep_DryWithFallback">
+        <chancePerPositionCurve>
+          <points>
+            <li>(0, 1)</li>
+            <li>(2.6, 1)</li>
+            <li>(3.0, 0)</li>
+          </points>
+        </chancePerPositionCurve>
+        <fallback>Gravel</fallback>
+      </li>
+      <li Class="RoadDefGenStep_Place">
+        <chancePerPositionCurve>
+          <points>
+            <li>(0, 0.8)</li>
+            <li>(2.8, 0.8)</li>
+            <li>(3.2, 0)</li>
+          </points>
+        </chancePerPositionCurve>
+        <place>Gravel</place>
+      </li>
+      <li Class="RoadDefGenStep_Place">
+        <chancePerPositionCurve>
+          <points>
+            <li>(0, 0.9)</li>
+            <li>(2.6, 0.8)</li>
+            <li>(3.0, 0)</li>
+          </points>
+        </chancePerPositionCurve>
+        <place>BrokenAsphalt</place>
+      </li>
+      <li Class="RoadDefGenStep_Place">
+        <chancePerPositionCurve>
+          <points>
+            <li>(0, 0.003)</li>
+            <li>(3.5, 0.003)</li>
+            <li>(3.6, 1)</li>
+            <li>(3.7, 0)</li>
+          </points>
+        </chancePerPositionCurve>
+        <place>AncientConcreteBarrier</place>
+      </li>
+      <li Class="RoadDefGenStep_Place">
+        <chancePerPositionCurve>
+          <points>
+            <li>(0, 0)</li>
+            <li>(3.0, 0)</li>
+            <li>(3.5, 0.8)</li>
+            <li>(4.0, 0)</li>
+          </points>
+        </chancePerPositionCurve>
+        <place>AncientLamppost</place>
+        <periodicSpacing>8</periodicSpacing>
+        <proximitySpacing>4</proximitySpacing>
+      </li>
+    </roadGenSteps>
+    <worldRenderSteps>
+      <li>
+        <layer>Outline</layer>
+        <width>0.95</width>
+      </li>
+      <li>
+        <layer>Gravel</layer>
+        <width>0.8</width>
+      </li>
+      <li>
+        <layer>Asphalt</layer>
+        <width>0.55</width>
+      </li>
+    </worldRenderSteps>
+    <worldTransitionGroup>Asphalt</worldTransitionGroup>
+  </RoadDef>
+
+</Defs>

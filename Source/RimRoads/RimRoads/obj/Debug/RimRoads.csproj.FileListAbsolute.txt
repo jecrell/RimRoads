@@ -1,0 +1,3 @@
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\RimRoads\Assemblies\RimRoads.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\RimRoads\Source\RimRoads\RimRoads\obj\Debug\RimRoads.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\RimRoads\Source\RimRoads\RimRoads\obj\Debug\RimRoads.csprojResolveAssemblyReference.cache

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+  <!--=============================== Tier 4: Hi-tech research bench with multi-analyzer ===================================-->
+
+  <ResearchProjectDef Name="RimRoads_Research" Abstract="True">
+    <!-- requiredResearchBuilding>Cults_ForbiddenKnowledgeCenter</requiredResearchBuilding -->
+    <techLevel>Neolithic</techLevel>
+    <tab>RimRoads_Tab</tab>
+    <tags>
+      <li>ta-ignore</li>
+    </tags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="RimRoads_Research">
+    <defName>RimRoads_DirtRoads</defName>
+    <label>Basic Roadworking</label>
+    <description>With a little planning, our colonists can learn to smoothe terrain for easier transportation between settlements.</description>
+    <baseCost>400</baseCost>
+    <researchViewX>0</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="RimRoads_Research">
+    <defName>RimRoads_StoneRoads</defName>
+    <label>Stonelaying</label>
+    <description>Learn to construct adequate, long-lasting, stone-based roads by laying deep roadbeds of crushed stone beneath well-placed flagstones.</description>
+    <baseCost>800</baseCost>
+    <prerequisites>
+      <li>RimRoads_DirtRoads</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="RimRoads_Research">
+    <defName>RimRoads_AsphaltRoads</defName>
+    <label>Pavement</label>
+    <description>Learn to utilize tar, asphalt, and convex surfaces to create incredibly masterful roadways that will stand the test of time.</description>
+    <baseCost>2900</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>RimRoads_StoneRoads</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="RimRoads_Research">
+    <defName>RimRoads_Highways</defName>
+    <label>Highways</label>
+    <description>Master architectural challenges to construct widened highways.</description>
+    <baseCost>4100</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>RimRoads_AsphaltRoads</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+</ResearchProjectDefs>

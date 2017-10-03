@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <WorldObjectDef>
+    <defName>RimRoads_RoadBlueprint</defName>
+    <label>blueprint</label>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <description>A blueprint for construction.</description>
+    <worldObjectClass>RimRoads.RoadBlueprint</worldObjectClass>
+    <texture>World/WorldObjects/RoutePlannerWaypoint</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/RoutePlannerWaypoint</expandingIconTexture>
+    <expandingIconPriority>1000</expandingIconPriority>
+    <allowCaravanIncidentsWhichGenerateMap>true</allowCaravanIncidentsWhichGenerateMap>
+    <saved>true</saved>
+  </WorldObjectDef>
+
+</Defs>
