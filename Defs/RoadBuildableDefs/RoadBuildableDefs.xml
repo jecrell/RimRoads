@@ -68,7 +68,7 @@
     <label>asphalt road</label>
     <ancientOnly>true</ancientOnly>
     <priority>40</priority>
-    <movementCostMultiplier>0.5</movementCostMultiplier>
+    <movementCostMultiplier>0.4</movementCostMultiplier>
     <tilesPerSegment>100</tilesPerSegment>
     <pathingMode>Bulldoze</pathingMode>
     <roadGenSteps>
@@ -149,7 +149,7 @@
     <label>asphalt highway</label>
     <priority>50</priority>
     <ancientOnly>true</ancientOnly>
-    <movementCostMultiplier>0.5</movementCostMultiplier>
+    <movementCostMultiplier>0.35</movementCostMultiplier>
     <tilesPerSegment>400</tilesPerSegment>
     <pathingMode>Bulldoze</pathingMode>
     <roadGenSteps>

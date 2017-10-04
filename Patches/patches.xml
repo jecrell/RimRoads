@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+  	<xpath>*/RoadDef[defName = "DirtPath"]/movementCostMultiplier</xpath>
+  	<value>
+      <movementCostMultiplier>0.70</movementCostMultiplier>
+  	</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+  	<xpath>*/RoadDef[defName = "DirtRoad"]/movementCostMultiplier</xpath>
+  	<value>
+      <movementCostMultiplier>0.60</movementCostMultiplier>
+  	</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RoadDef[defName = "StoneRoad"]/movementCostMultiplier</xpath>
+		<value>
+			<movementCostMultiplier>0.45</movementCostMultiplier>
+		</value>
+	</Operation>
+
+</Patch>
