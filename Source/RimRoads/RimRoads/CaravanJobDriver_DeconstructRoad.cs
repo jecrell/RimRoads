@@ -22,7 +22,7 @@ namespace RimRoads
         {
             Find.WorldGrid[this.TargetA.Tile].roads = null;
             Find.World.renderer.RegenerateAllLayersNow();
-            Messages.Message("RimRoads_DeconstructionFinished".Translate(new object[] { this.GetActor().Label }), new GlobalTargetInfo(this.GetActor()), MessageSound.Benefit);
+            Messages.Message("RimRoads_DeconstructionFinished".Translate(new object[] { this.GetActor().Label }), new GlobalTargetInfo(this.GetActor()), MessageTypeDefOf.PositiveEvent); //MessageSound.Benefit);
         }
 
         public override void ExposeData()

@@ -74,7 +74,7 @@ namespace RimRoads
             Tile curTile = Find.WorldGrid[curStartTile];
             if (!curTile.roads.NullOrEmpty())
             {
-                Messages.Message("RimRoads_ErrorRoadExists", MessageSound.RejectInput);
+                Messages.Message("RimRoads_ErrorRoadExists", MessageTypeDefOf.RejectInput); //MessageSound.RejectInput);
                 return;
             }
             GlobalTargetInfo end = default(GlobalTargetInfo);

@@ -24,7 +24,7 @@ namespace RimRoads
         public void DoEffect()
         {
             BlueprintToWorkOn.Notify_Built();
-            Messages.Message("RimRoads_BuildRoadFinished".Translate(this.GetActor().LabelCap), new GlobalTargetInfo(this.GetActor()), MessageSound.Benefit);
+            Messages.Message("RimRoads_BuildRoadFinished".Translate(this.GetActor().LabelCap), new GlobalTargetInfo(this.GetActor()), MessageTypeDefOf.PositiveEvent); //MessageSound.Benefit);
         }
 
         public override void ExposeData()

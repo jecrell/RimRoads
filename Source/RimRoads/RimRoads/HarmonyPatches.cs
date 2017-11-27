@@ -91,7 +91,7 @@ namespace RimRoads
                             }
                             if (list.Count == 0)
                             {
-                                Messages.Message("RimRoads_NoRoadsConstructable".Translate(), MessageSound.RejectInput);
+                                Messages.Message("RimRoads_NoRoadsConstructable".Translate(), MessageTypeDefOf.RejectInput); //MessageSound.RejectInput);
                             }
                             else
                             {
