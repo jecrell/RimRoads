@@ -83,7 +83,7 @@ namespace RimRoads
                             {
                                 if (current.CanMake()) //&& (DebugSettings.godMode || base.Map.listerThings.ThingsOfDef(current).Count > 0))
                                 {
-                                    list.Add(new FloatMenuOption(current.LabelCap, delegate
+                                    list.Add(new FloatMenuOption(current.FloatMenuString, delegate
                                     {
                                         Find.World.GetComponent<RoadTracker>().PlanBlueprints(__instance, __instance.Tile, current);
                                     }, MenuOptionPriority.Default, null, null, 0f, null, null));
