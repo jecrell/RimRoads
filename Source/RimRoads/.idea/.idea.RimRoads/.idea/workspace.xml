@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3a35fff6-45bb-4498-8808-26867dadac1c" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="RimRoads.csproj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RimRoads/RimRoads.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CaravanJobDriver_DeconstructRoad.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RimRoads/CaravanJobDriver_DeconstructRoad.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+              <folding>
+                <marker date="1529810476730" expanded="false" signature="6:170" ph="..." />
+                <marker date="1529810476730" expanded="true" signature="190:2764" ph="{...}" />
+                <marker date="1529810476730" expanded="true" signature="261:2762" ph="{...}" />
+                <marker date="1529810476730" expanded="true" signature="622:980" ph="{...}" />
+                <marker date="1529810476730" expanded="true" signature="1023:1151" ph="{...}" />
+                <marker date="1529810476730" expanded="true" signature="1216:2756" ph="{...}" />
+                <marker date="1529810476730" expanded="true" signature="1282:1421" ph="{...}" />
+                <marker date="1529810476730" expanded="true" signature="1569:2587" ph="{...}" />
+                <marker date="1529810476730" expanded="true" signature="1795:2421" ph="{...}" />
+                <marker date="1529810476730" expanded="true" signature="2218:2399" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HarmonyPatches.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RimRoads/HarmonyPatches.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+              <folding>
+                <marker date="1529811717784" expanded="false" signature="6:279" ph="..." />
+                <marker date="1529811717784" expanded="true" signature="299:9703" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="366:9701" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="404:1111" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="1228:1847" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="1371:1837" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="1613:1823" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="1986:7692" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="2043:7682" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="2238:3922" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="2310:3902" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="2352:3880" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="2726:3367" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="2789:2935" ph="/* if (current.CanMake()) //&amp;&amp; (DebugSettings.godMode || base.Map.listerThings.ThingsOfDef(current).Count &gt; 0)) ... */" />
+                <marker date="1529811717784" expanded="true" signature="3416:3477" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="3510:3852" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="4015:5924" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="4087:5904" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="4129:5882" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="4587:5216" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="4758:5186" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="5265:5479" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="5512:5854" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="6052:7668" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="6216:7649" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="6296:6892" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="6342:6890" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="6945:7627" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="7033:7599" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="7087:7597" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="7844:9694" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="8200:9682" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="8362:9680" ph="{...}" />
+                <marker date="1529811717784" expanded="true" signature="8446:8571" ph="/* Tile tile = Find.WorldGrid[num]; ... */" />
+                <marker date="1529811717784" expanded="true" signature="8658:9128" ph="/* Find.WorldTargeter.StopTargeting(); ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModMain.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RimRoads/ModMain.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+              <folding>
+                <marker date="1529811781194" expanded="false" signature="6:31" ph="..." />
+                <marker date="1529811781194" expanded="true" signature="52:2395" ph="{...}" />
+                <marker date="1529811781194" expanded="true" signature="119:303" ph="{...}" />
+                <marker date="1529811781194" expanded="true" signature="134:297" ph="/* public static bool enableFloatingNames = true; ... */" />
+                <marker date="1529811781194" expanded="true" signature="335:2393" ph="{...}" />
+                <marker date="1529811781194" expanded="true" signature="434:747" ph="{...}" />
+                <marker date="1529811781194" expanded="true" signature="457:737" ph="/* this.settings = GetSettings&lt;Settings&gt;(); ... */" />
+                <marker date="1529811781194" expanded="true" signature="748:2387" ph="/* public override string SettingsCategory() =&gt; &quot;Rim Roads&quot;; ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoadBlueprint.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RimRoads/RoadBlueprint.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2793">
+              <caret line="155" column="13" lean-forward="false" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+              <folding>
+                <marker date="1529810464706" expanded="false" signature="6:180" ph="..." />
+                <marker date="1529810464706" expanded="true" signature="200:7459" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="266:7457" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="990:1304" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="1352:1373" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="1409:4733" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="1992:2502" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="2052:2488" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="2119:2470" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="2316:2448" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="2537:3047" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="2597:3033" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="2664:3015" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="2860:2993" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="3061:4325" ph="/* if (!neighbors.NullOrEmpty()) ... */" />
+                <marker date="1529810464706" expanded="true" signature="4846:6495" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="4889:5042" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="5162:5214" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="5347:5685" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="5420:5484" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="5730:5823" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="5869:5963" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="6028:6109" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="6220:6303" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="6534:7141" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="6636:7038" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="7180:7337" ph="{...}" />
+                <marker date="1529810464706" expanded="true" signature="7376:7451" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CaravanJobDriver_ConsructRoads.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RimRoads/CaravanJobDriver_ConsructRoads.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="72" column="47" lean-forward="false" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
+              <folding>
+                <marker date="1529810481529" expanded="false" signature="6:170" ph="..." />
+                <marker date="1529810481529" expanded="true" signature="190:4249" ph="{...}" />
+                <marker date="1529810481529" expanded="true" signature="260:4247" ph="{...}" />
+                <marker date="1529810481529" expanded="true" signature="708:966" ph="{...}" />
+                <marker date="1529810481529" expanded="true" signature="1009:1137" ph="{...}" />
+                <marker date="1529810481529" expanded="true" signature="1202:4241" ph="{...}" />
+                <marker date="1529810481529" expanded="true" signature="1268:1407" ph="{...}" />
+                <marker date="1529810481529" expanded="true" signature="1553:4060" ph="{...}" />
+                <marker date="1529810481529" expanded="true" signature="1698:2655" ph="{...}" />
+                <marker date="1529810481529" expanded="true" signature="1980:2633" ph="{...}" />
+                <marker date="1529810481529" expanded="true" signature="2088:2355" ph="{...}" />
+                <marker date="1529810481529" expanded="true" signature="2384:2607" ph="/* Find.WorldGrid[fromTile].potentialRoads.RemoveAll((Tile.RoadLink rl) =&gt; rl.neighbor == toTile); ... */" />
+                <marker date="1529810481529" expanded="true" signature="2863:3010" ph="{...}" />
+                <marker date="1529810481529" expanded="true" signature="3270:3894" ph="{...}" />
+                <marker date="1529810481529" expanded="true" signature="3691:3872" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoadTracker.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RimRoads/RoadTracker.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="253" column="13" lean-forward="false" selection-start-line="253" selection-start-column="13" selection-end-line="253" selection-end-column="13" />
+              <folding>
+                <marker date="1529811767477" expanded="false" signature="6:210" ph="..." />
+                <marker date="1529811767477" expanded="true" signature="230:10638" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="274:1002" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="453:559" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="597:746" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="780:996" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="1083:10636" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="1973:1993" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="2050:2200" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="2126:2190" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="2314:3677" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="2499:2672" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="2808:3517" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="3548:3667" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="3717:4526" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="3743:4482" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="3903:4157" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="4322:4468" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="4659:4826" ph="/* private List&lt;int&gt; nodes = new List&lt;int&gt;(128); ... */" />
+                <marker date="1529811767477" expanded="true" signature="4913:6045" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="5175:5917" ph="/* if (this.cantRemoveFirstWaypoint &amp;&amp; this.waypoints.Any&lt;RoutePlannerWaypoint&gt;() &amp;&amp; point == this.waypoints[0]) ... */" />
+                <marker date="1529811767477" expanded="true" signature="5944:6035" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="6174:8464" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="6234:6483" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="6579:8453" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="6909:7987" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="8021:8219" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="8103:8201" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="8575:9787" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="8618:8670" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="8715:9744" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="8886:9238" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="9282:9730" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="9600:9712" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="9880:9985" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="10028:10630" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="10254:10620" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="10321:10606" ph="{...}" />
+                <marker date="1529811767477" expanded="true" signature="10403:10588" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.roads</find>
+      <find>.Roads</find>
+      <find>//=</find>
+      <find>Clear</find>
+      <find>RoadLink</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>.potentialRoads</replace>
+      <replace>.Roads</replace>
+    </replaceStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/RimRoads/HarmonyPatches.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RimRoads/RoadBlueprint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RimRoads/CaravanJobDriver_ConsructRoads.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RimRoads/RoadTracker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RimRoads/ModMain.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RimRoads/CaravanJobDriver_DeconstructRoad.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/RimRoads/CaravanJobDriver_ConsructRoads.cs" />
+        <option value="$PROJECT_DIR$/RimRoads/RoadBlueprint.cs" />
+        <option value="$PROJECT_DIR$/RimRoads/CaravanJobDriver_DeconstructRoad.cs" />
+        <option value="$PROJECT_DIR$/RimRoads/RoadTracker.cs" />
+        <option value="$PROJECT_DIR$/RimRoads/HarmonyPatches.cs" />
+        <option value="$PROJECT_DIR$/RimRoads/ModMain.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="RimRoads (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="RimRoads (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="RimRoads" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="RimRoads (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="RimRoads" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="References" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="RimRoads (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="RimRoads" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="References" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assemblies" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../RimworldModReleaseTool.exe" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Executable.Deployer">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
+    <configuration name="Deployer" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\RimRoads\RimworldModReleaseTool.exe" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimRoads&quot;" />
+      <option name="WORKING_DIRECTORY" value="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\RimRoads" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue=".NET Executable.Deployer" />
+      <item index="1" class="java.lang.String" itemvalue="Unity Debug.Attach to Unity Editor" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a35fff6-45bb-4498-8808-26867dadac1c" name="Default" comment="" />
+      <created>1529810073453</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529810073453</updated>
+      <workItem from="1529810074723" duration="1763000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1763000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25349087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/RimRoads/RimRoads.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RimRoads/CaravanJobDriver_DeconstructRoad.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <marker date="1529810476730" expanded="false" signature="6:170" ph="..." />
+            <marker date="1529810476730" expanded="true" signature="190:2764" ph="{...}" />
+            <marker date="1529810476730" expanded="true" signature="261:2762" ph="{...}" />
+            <marker date="1529810476730" expanded="true" signature="622:980" ph="{...}" />
+            <marker date="1529810476730" expanded="true" signature="1023:1151" ph="{...}" />
+            <marker date="1529810476730" expanded="true" signature="1216:2756" ph="{...}" />
+            <marker date="1529810476730" expanded="true" signature="1282:1421" ph="{...}" />
+            <marker date="1529810476730" expanded="true" signature="1569:2587" ph="{...}" />
+            <marker date="1529810476730" expanded="true" signature="1795:2421" ph="{...}" />
+            <marker date="1529810476730" expanded="true" signature="2218:2399" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RimRoads/CaravanJobDriver_ConsructRoads.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="72" column="47" lean-forward="false" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
+          <folding>
+            <marker date="1529810481529" expanded="false" signature="6:170" ph="..." />
+            <marker date="1529810481529" expanded="true" signature="190:4249" ph="{...}" />
+            <marker date="1529810481529" expanded="true" signature="260:4247" ph="{...}" />
+            <marker date="1529810481529" expanded="true" signature="708:966" ph="{...}" />
+            <marker date="1529810481529" expanded="true" signature="1009:1137" ph="{...}" />
+            <marker date="1529810481529" expanded="true" signature="1202:4241" ph="{...}" />
+            <marker date="1529810481529" expanded="true" signature="1268:1407" ph="{...}" />
+            <marker date="1529810481529" expanded="true" signature="1553:4060" ph="{...}" />
+            <marker date="1529810481529" expanded="true" signature="1698:2655" ph="{...}" />
+            <marker date="1529810481529" expanded="true" signature="1980:2633" ph="{...}" />
+            <marker date="1529810481529" expanded="true" signature="2088:2355" ph="{...}" />
+            <marker date="1529810481529" expanded="true" signature="2384:2607" ph="/* Find.WorldGrid[fromTile].potentialRoads.RemoveAll((Tile.RoadLink rl) =&gt; rl.neighbor == toTile); ... */" />
+            <marker date="1529810481529" expanded="true" signature="2863:3010" ph="{...}" />
+            <marker date="1529810481529" expanded="true" signature="3270:3894" ph="{...}" />
+            <marker date="1529810481529" expanded="true" signature="3691:3872" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RimRoads/RoadBlueprint.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2793">
+          <caret line="155" column="13" lean-forward="false" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+          <folding>
+            <marker date="1529810464706" expanded="false" signature="6:180" ph="..." />
+            <marker date="1529810464706" expanded="true" signature="200:7459" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="266:7457" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="990:1304" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="1352:1373" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="1409:4733" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="1992:2502" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="2052:2488" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="2119:2470" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="2316:2448" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="2537:3047" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="2597:3033" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="2664:3015" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="2860:2993" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="3061:4325" ph="/* if (!neighbors.NullOrEmpty()) ... */" />
+            <marker date="1529810464706" expanded="true" signature="4846:6495" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="4889:5042" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="5162:5214" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="5347:5685" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="5420:5484" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="5730:5823" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="5869:5963" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="6028:6109" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="6220:6303" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="6534:7141" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="6636:7038" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="7180:7337" ph="{...}" />
+            <marker date="1529810464706" expanded="true" signature="7376:7451" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RimRoads/RoadTracker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="253" column="13" lean-forward="false" selection-start-line="253" selection-start-column="13" selection-end-line="253" selection-end-column="13" />
+          <folding>
+            <marker date="1529811767477" expanded="false" signature="6:210" ph="..." />
+            <marker date="1529811767477" expanded="true" signature="230:10638" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="274:1002" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="453:559" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="597:746" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="780:996" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="1083:10636" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="1973:1993" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="2050:2200" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="2126:2190" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="2314:3677" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="2499:2672" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="2808:3517" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="3548:3667" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="3717:4526" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="3743:4482" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="3903:4157" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="4322:4468" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="4659:4826" ph="/* private List&lt;int&gt; nodes = new List&lt;int&gt;(128); ... */" />
+            <marker date="1529811767477" expanded="true" signature="4913:6045" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="5175:5917" ph="/* if (this.cantRemoveFirstWaypoint &amp;&amp; this.waypoints.Any&lt;RoutePlannerWaypoint&gt;() &amp;&amp; point == this.waypoints[0]) ... */" />
+            <marker date="1529811767477" expanded="true" signature="5944:6035" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="6174:8464" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="6234:6483" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="6579:8453" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="6909:7987" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="8021:8219" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="8103:8201" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="8575:9787" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="8618:8670" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="8715:9744" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="8886:9238" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="9282:9730" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="9600:9712" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="9880:9985" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="10028:10630" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="10254:10620" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="10321:10606" ph="{...}" />
+            <marker date="1529811767477" expanded="true" signature="10403:10588" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RimRoads/HarmonyPatches.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <marker date="1529811717784" expanded="false" signature="6:279" ph="..." />
+            <marker date="1529811717784" expanded="true" signature="299:9703" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="366:9701" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="404:1111" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="1228:1847" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="1371:1837" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="1613:1823" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="1986:7692" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="2043:7682" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="2238:3922" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="2310:3902" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="2352:3880" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="2726:3367" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="2789:2935" ph="/* if (current.CanMake()) //&amp;&amp; (DebugSettings.godMode || base.Map.listerThings.ThingsOfDef(current).Count &gt; 0)) ... */" />
+            <marker date="1529811717784" expanded="true" signature="3416:3477" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="3510:3852" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="4015:5924" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="4087:5904" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="4129:5882" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="4587:5216" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="4758:5186" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="5265:5479" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="5512:5854" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="6052:7668" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="6216:7649" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="6296:6892" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="6342:6890" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="6945:7627" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="7033:7599" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="7087:7597" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="7844:9694" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="8200:9682" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="8362:9680" ph="{...}" />
+            <marker date="1529811717784" expanded="true" signature="8446:8571" ph="/* Tile tile = Find.WorldGrid[num]; ... */" />
+            <marker date="1529811717784" expanded="true" signature="8658:9128" ph="/* Find.WorldTargeter.StopTargeting(); ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RimRoads/ModMain.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding>
+            <marker date="1529811781194" expanded="false" signature="6:31" ph="..." />
+            <marker date="1529811781194" expanded="true" signature="52:2395" ph="{...}" />
+            <marker date="1529811781194" expanded="true" signature="119:303" ph="{...}" />
+            <marker date="1529811781194" expanded="true" signature="134:297" ph="/* public static bool enableFloatingNames = true; ... */" />
+            <marker date="1529811781194" expanded="true" signature="335:2393" ph="{...}" />
+            <marker date="1529811781194" expanded="true" signature="434:747" ph="{...}" />
+            <marker date="1529811781194" expanded="true" signature="457:737" ph="/* this.settings = GetSettings&lt;Settings&gt;(); ... */" />
+            <marker date="1529811781194" expanded="true" signature="748:2387" ph="/* public override string SettingsCategory() =&gt; &quot;Rim Roads&quot;; ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

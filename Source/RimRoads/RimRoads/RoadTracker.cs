@@ -28,6 +28,14 @@ namespace RimRoads
             this.indexB = b;
         }
 
+        public RoadLink ToRoadLink()
+        {
+            var link = new RoadLink();
+            link.neighbor = indexA;
+            link.road = def;
+            return link;
+        }
+
         public void ExposeData()
         {
             Scribe_Defs.Look<RoadDef>(ref this.def, "def");
@@ -72,7 +80,7 @@ namespace RimRoads
         {
             CurStartTile = start; //GenWorld.MouseTile(false);
             Tile curTile = Find.WorldGrid[curStartTile];
-            if (!curTile.roads.NullOrEmpty())
+            if (!curTile.potentialRoads.NullOrEmpty())
             {
                 Messages.Message("RimRoads_ErrorRoadExists", MessageTypeDefOf.RejectInput); //MessageSound.RejectInput);
                 return;
@@ -158,7 +166,7 @@ namespace RimRoads
             //this.RecreatePaths();
             if (playSound)
             {
-                SoundDefOf.TickLow.PlayOneShotOnCamera(null);
+                SoundDefOf.Tick_Low.PlayOneShotOnCamera(null);
             }
         }
 

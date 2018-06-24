@@ -1,3 +1,6 @@
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\RimRoads\Assemblies\RimRoads.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\RimRoads\Source\RimRoads\RimRoads\obj\Debug\RimRoads.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\RimRoads\Source\RimRoads\RimRoads\obj\Debug\RimRoads.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\RimRoads\Source\RimRoads\RimRoads\obj\Debug\RimRoads.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\RimRoads\Source\RimRoads\RimRoads\obj\Debug\RimRoads.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\RimRoads\Assemblies\RimRoads.dll

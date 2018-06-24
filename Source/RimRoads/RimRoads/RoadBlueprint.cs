@@ -58,7 +58,7 @@ namespace RimRoads
                 {
                     foreach (int n in neighbors)
                     {
-                        if (n != backwardTile && Find.WorldGrid[n].roads is List<Tile.RoadLink> r && !r.NullOrEmpty() && r.Any(x => x.road == this.RoadType.roadDef))
+                        if (n != backwardTile && Find.WorldGrid[n].potentialRoads is List<Tile.RoadLink> r && !r.NullOrEmpty() && r.Any(x => x.road == this.RoadType.roadDef))
                         {
                             forwardTile = n;
                             break;
@@ -73,7 +73,7 @@ namespace RimRoads
                 {
                     foreach (int n in neighbors)
                     {
-                        if (n != forwardTile && Find.WorldGrid[n].roads is List<Tile.RoadLink> r && !r.NullOrEmpty() && r.Any(x => x.road == this.RoadType.roadDef))
+                        if (n != forwardTile && Find.WorldGrid[n].potentialRoads is List<Tile.RoadLink> r && !r.NullOrEmpty() && r.Any(x => x.road == this.RoadType.roadDef))
                         {
                             backwardTile = n;
                             break;
@@ -86,7 +86,7 @@ namespace RimRoads
             //{
             //    foreach (int n in neighbors)
             //    {
-            //        if (n != forwardTile && n != backwardTile && n != fforwardTile && n != bbackwardTile && Find.WorldGrid[n].roads is List<Tile.RoadLink> r && !r.NullOrEmpty() && r.Any(x => x.road == this.RoadType.roadDef))
+            //        if (n != forwardTile && n != backwardTile && n != fforwardTile && n != bbackwardTile && Find.WorldGrid[n].potentialRoads is List<Tile.RoadLink> r && !r.NullOrEmpty() && r.Any(x => x.road == this.RoadType.roadDef))
             //        {
             //            forkTile = n;
             //            break;
@@ -104,7 +104,7 @@ namespace RimRoads
             //    {
             //        foreach (int n in neighbors)
             //        {
-            //            if (Find.WorldGrid[n].roads is List<Tile.RoadLink> r && !r.NullOrEmpty() && r.Any(x => x.road == this.RoadType.roadDef))
+            //            if (Find.WorldGrid[n].potentialRoads is List<Tile.RoadLink> r && !r.NullOrEmpty() && r.Any(x => x.road == this.RoadType.roadDef))
             //            {
             //                adjToDraw = n;
             //                break;
@@ -141,29 +141,29 @@ namespace RimRoads
                 {
                     return;
                 }
-                tile.roads.RemoveAll((Tile.RoadLink rl) => rl.neighbor == toTile);
-                tile2.roads.RemoveAll((Tile.RoadLink rl) => rl.neighbor == fromTile);
+                tile.potentialRoads.RemoveAll((Tile.RoadLink rl) => rl.neighbor == toTile);
+                tile2.potentialRoads.RemoveAll((Tile.RoadLink rl) => rl.neighbor == fromTile);
             }
-            if (tile.roads == null)
+            if (tile.potentialRoads == null)
             {
-                tile.roads = new List<Tile.RoadLink>();
+                tile.potentialRoads = new List<Tile.RoadLink>();
             }
-            if (tile2.roads == null)
+            if (tile2.potentialRoads == null)
             {
-                tile2.roads = new List<Tile.RoadLink>();
+                tile2.potentialRoads = new List<Tile.RoadLink>();
             }
             Tile.RoadLink first = new Tile.RoadLink
             {
                 neighbor = toTile,
                 road = roadDef
             };
-            tile.roads.Add(first);
+            tile.potentialRoads.Add(first);
             Tile.RoadLink second = new Tile.RoadLink
             {
                 neighbor = fromTile,
                 road = roadDef
             };
-            tile2.roads.Add(second);
+            tile2.potentialRoads.Add(second);
             Find.World.GetComponent<RoadTracker>().ConstructedRoads.Add(new RimRoadLink(first.road, second.neighbor, first.neighbor));
         }
 

@@ -25,8 +25,27 @@ namespace RimRoads
                 new HarmonyMethod(typeof(HarmonyPatches), nameof(DoListingItems_World_PostFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Caravan), "GetGizmos"), null,
                 new HarmonyMethod(typeof(HarmonyPatches), nameof(GetGizmos_RoadButtons)), null);
+            harmony.Patch(AccessTools.Property(typeof(Tile), nameof(Tile.Roads)).GetGetMethod(), null,
+                new HarmonyMethod(typeof(HarmonyPatches), nameof(Roads_PostFix)), null);
+            
         }
 
+        
+        //Tile
+        public static void Roads_PostFix(Tile __instance, ref List<Tile.RoadLink> __result)
+        {
+            var rimRoadLinks = Find.World.GetComponent<RoadTracker>().ConstructedRoads;
+            if (!rimRoadLinks.NullOrEmpty())
+            {
+                if (rimRoadLinks.FindAll(
+                    x => Find.World.grid[x.indexA] == __instance ||
+                         Find.World.grid[x.indexB] == __instance) is List<RimRoadLink> links && !links.NullOrEmpty())
+                {
+                    if (__result == null) __result = new List<Tile.RoadLink>();
+                    __result.AddRange(links.Select(rimRoadLink => rimRoadLink.ToRoadLink()));
+                }
+            }
+        }
 
         // RimWorld.Planet.Caravan
 
@@ -35,7 +54,7 @@ namespace RimRoads
             if (__instance.IsPlayerControlled)
             {
                 Tile curTile = Find.WorldGrid[__instance.Tile];
-                if (DebugSettings.godMode && curTile?.roads == null || curTile?.roads?.Count == 0)
+                if (DebugSettings.godMode && curTile?.potentialRoads == null || curTile?.potentialRoads?.Count == 0)
                 {
                     __result = __result.Concat(new[] {new Command_Action()
                     {
@@ -69,7 +88,7 @@ namespace RimRoads
                     });
                 }
 
-                if (curTile?.roads == null || curTile?.roads?.Count == 0)
+                if (curTile?.potentialRoads == null || curTile?.potentialRoads?.Count == 0)
                 {
                     __result = __result.Concat(new[] {new Command_Action()
                     {
@@ -104,7 +123,7 @@ namespace RimRoads
                     });
                 }
                 //Deconstruct Roads
-                if (curTile.roads != null && curTile?.roads?.Count() > 0)
+                if (curTile.potentialRoads != null && curTile?.potentialRoads?.Count() > 0)
                 {
                     if (Find.World.GetComponent<CaravanJobGiver>().CurJob(__instance)?.def != CaravanJobDef.Named("RimRoads_JobDeconstructRoad"))
                     {
@@ -126,7 +145,7 @@ namespace RimRoads
                                 defaultDesc = "Remove the road at this location",
                                 action = delegate
                                 {
-                                    curTile.roads = null;
+                                    curTile.potentialRoads = null;
                                     Find.World.renderer.RegenerateAllLayersNow();
                                     Log.Message("Done!");
                                 }
@@ -137,6 +156,8 @@ namespace RimRoads
                 }
             }
         }
+        
+        
 
         // Verse.Dialog_DebugActionsMenu
         public static void DoListingItems_World_PostFix(Dialog_DebugActionsMenu __instance)

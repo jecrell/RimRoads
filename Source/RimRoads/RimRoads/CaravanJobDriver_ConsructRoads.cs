@@ -61,8 +61,8 @@ namespace RimRoads
                                 this.ReadyForNextToil();
                                 return;
                             }
-                            //Find.WorldGrid[fromTile].roads.RemoveAll((Tile.RoadLink rl) => rl.neighbor == toTile);
-                            //Find.WorldGrid[toTile].roads.RemoveAll((Tile.RoadLink rl) => rl.neighbor == fromTile);
+                            //Find.WorldGrid[fromTile].potentialRoads.RemoveAll((Tile.RoadLink rl) => rl.neighbor == toTile);
+                            //Find.WorldGrid[toTile].potentialRoads.RemoveAll((Tile.RoadLink rl) => rl.neighbor == fromTile);
                         }
                     }
 

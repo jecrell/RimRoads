@@ -20,7 +20,7 @@ namespace RimRoads
         public CaravanJobDriver_DeconstructRoad() { }
         public void DoEffect()
         {
-            Find.WorldGrid[this.TargetA.Tile].roads = null;
+            Find.WorldGrid[this.TargetA.Tile].potentialRoads = null;
             Find.World.renderer.RegenerateAllLayersNow();
             Messages.Message("RimRoads_DeconstructionFinished".Translate(new object[] { this.GetActor().Label }), new GlobalTargetInfo(this.GetActor()), MessageTypeDefOf.PositiveEvent); //MessageSound.Benefit);
         }
