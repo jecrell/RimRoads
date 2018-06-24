@@ -6,8 +6,9 @@
     <label>dirt road</label>
     <roadDef>DirtRoad</roadDef>
     <costList />
-    <stuffCategories/>
-    <costStuffCount/>
+    <stuffCostList >
+      <Woody>100</Woody>
+    </stuffCostList>
     <workToMake>63000</workToMake>
     <researchPrerequisites>
       <li>RimRoads_DirtRoads</li>
@@ -19,10 +20,10 @@
     <label>stone road</label>
     <roadDef>StoneRoad</roadDef>
     <costList />
-    <stuffCategories>
-      <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>150</costStuffCount>
+    <stuffCostList>
+      <Stony>150</Stony>
+      <Woody>50</Woody>
+    </stuffCostList>
     <workToMake>100500</workToMake>
     <researchPrerequisites>
       <li>RimRoads_StoneRoads</li>
@@ -36,10 +37,10 @@
     <costList>
       <Chemfuel>30</Chemfuel>
     </costList>
-    <stuffCategories>
-      <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>350</costStuffCount>
+    <stuffCostList>
+      <Stony>350</Stony>
+      <Metallic>100</Metallic>
+    </stuffCostList>
     <workToMake>200000</workToMake>
     <researchPrerequisites>
       <li>RimRoads_AsphaltRoads</li>
@@ -51,12 +52,12 @@
     <label>asphalt highway</label>
     <roadDef>RimRoads_AsphaltHighway</roadDef>
     <costList>
-      <Chemfuel>60</Chemfuel>
+      <Chemfuel>200</Chemfuel>
     </costList>
-    <stuffCategories>
-      <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>450</costStuffCount>
+    <stuffCostList>
+      <Stony>300</Stony>
+      <Metallic>500</Metallic>
+    </stuffCostList>
     <workToMake>400000</workToMake>
     <researchPrerequisites>
       <li>RimRoads_Highways</li>

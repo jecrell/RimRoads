@@ -8,4 +8,6 @@
 <RimRoads_DeconstructRoad>Deconstruct Road</RimRoads_DeconstructRoad>
 <RimRoads_DeconstructRoadDesc>Removes the road from this location.</RimRoads_DeconstructRoadDesc>
 <RimRoads_DeconstructionFinished>{0} has successfully removed the road.</RimRoads_DeconstructionFinished>
+<RimRoads_And>And</RimRoads_And>
+<RimRoads_Stuff>Stuff</RimRoads_Stuff>
 </LanguageData>
