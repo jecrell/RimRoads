@@ -46,13 +46,13 @@ namespace RimRoads
             List<int> neighbors = new List<int>();
             Find.WorldGrid.GetTileNeighbors(this.Tile, neighbors);
 
-            int forwardTile = (nextBlueprint != null) ? nextBlueprint.Tile : -1;
-            int fforwardTile = (nextBlueprint?.nextBlueprint != null) ? nextBlueprint.nextBlueprint.Tile : -1;
-            int backwardTile = (prevBlueprint != null) ? prevBlueprint.Tile : -1;
-            int bbackwardTile = (prevBlueprint?.prevBlueprint != null) ? prevBlueprint.prevBlueprint.Tile : -1;
+            int forwardTile = nextBlueprint?.Tile ?? -1;
+            int fforwardTile = nextBlueprint?.nextBlueprint?.Tile ?? -1;
+            int backwardTile = prevBlueprint?.Tile ?? -1;
+            int bbackwardTile = prevBlueprint?.prevBlueprint?.Tile ?? -1;
             //int forkTile = -1;
 
-            if (forwardTile < 0)
+            if (!Find.WorldGrid.InBounds(forwardTile))
             {
                 if (!neighbors.NullOrEmpty())
                 {
@@ -67,7 +67,7 @@ namespace RimRoads
                 }
             }
 
-            if (backwardTile < 0)
+            if (!Find.WorldGrid.InBounds(backwardTile))
             {
                 if (!neighbors.NullOrEmpty())
                 {
@@ -112,58 +112,59 @@ namespace RimRoads
             //        }
             //    }
             //}
-            if (forwardTile > 0) OverlayRoad(this.Tile, forwardTile, RoadType.roadDef);
-            if (backwardTile > 0) OverlayRoad(this.Tile, backwardTile, RoadType.roadDef);
+            if (Find.WorldGrid.InBounds(forwardTile)) OverlayRoad(this.Tile, forwardTile, RoadType.roadDef);
+            if (Find.WorldGrid.InBounds(backwardTile)) OverlayRoad(this.Tile, backwardTile, RoadType.roadDef);
             //if (forkTile > 0) OverlayRoad(this.Tile, forkTile, RoadType.roadDef);
 
             Find.World.GetComponent<RoadTracker>().TryRemoveBlueprint(this);
-            Find.World.renderer.RegenerateAllLayersNow();
+            Find.World.renderer.RegenerateAllLayersNow();//SetDirty<WorldLayer_Roads>();
         }
 
         // RimWorld.Planet.WorldGrid
         public void OverlayRoad(int fromTile, int toTile, RoadDef roadDef)
         {
-            if (roadDef == null)
-            {
-                Log.ErrorOnce("Attempted to remove road with overlayRoad; not supported", 90292249);
-                return;
-            }
-            RoadDef roadDef2 = Find.WorldGrid.GetRoadDef(fromTile, toTile, false);
-            if (roadDef2 == roadDef)
-            {
-                return;
-            }
+            Find.World.grid.OverlayRoad(fromTile, toTile, roadDef);
+//           if (roadDef == null)
+//            {
+//                Log.ErrorOnce("Attempted to remove road with overlayRoad; not supported", 90292249);
+//                return;
+//            }
+//            RoadDef roadDef2 = Find.WorldGrid.GetRoadDef(fromTile, toTile, false);
+//            if (roadDef2 == roadDef)
+//            {
+//                return;
+//            }
             Tile tile = Find.WorldGrid[fromTile];
             Tile tile2 = Find.WorldGrid[toTile];
-            if (roadDef2 != null)
-            {
-                if (roadDef2.priority >= roadDef.priority)
-                {
-                    return;
-                }
-                tile.potentialRoads.RemoveAll((Tile.RoadLink rl) => rl.neighbor == toTile);
-                tile2.potentialRoads.RemoveAll((Tile.RoadLink rl) => rl.neighbor == fromTile);
-            }
-            if (tile.potentialRoads == null)
-            {
-                tile.potentialRoads = new List<Tile.RoadLink>();
-            }
-            if (tile2.potentialRoads == null)
-            {
-                tile2.potentialRoads = new List<Tile.RoadLink>();
-            }
+//            if (roadDef2 != null)
+//            {
+//                if (roadDef2.priority >= roadDef.priority)
+//                {
+//                    return;
+//                }
+//                tile.potentialRoads.RemoveAll((Tile.RoadLink rl) => rl.neighbor == toTile);
+//                tile2.potentialRoads.RemoveAll((Tile.RoadLink rl) => rl.neighbor == fromTile);
+//            }
+//            if (tile.potentialRoads == null)
+//            {
+//                tile.potentialRoads = new List<Tile.RoadLink>();
+//            }
+//            if (tile2.potentialRoads == null)
+//            {
+//                tile2.potentialRoads = new List<Tile.RoadLink>();
+//            }*/
             Tile.RoadLink first = new Tile.RoadLink
             {
                 neighbor = toTile,
                 road = roadDef
             };
-            tile.potentialRoads.Add(first);
+            //tile.potentialRoads.Add(first);
             Tile.RoadLink second = new Tile.RoadLink
             {
                 neighbor = fromTile,
                 road = roadDef
             };
-            tile2.potentialRoads.Add(second);
+            //tile2.potentialRoads.Add(second);
             Find.World.GetComponent<RoadTracker>().ConstructedRoads.Add(new RimRoadLink(first.road, second.neighbor, first.neighbor));
         }
 

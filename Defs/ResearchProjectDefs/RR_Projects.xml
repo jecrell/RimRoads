@@ -7,9 +7,6 @@
     <!-- requiredResearchBuilding>Cults_ForbiddenKnowledgeCenter</requiredResearchBuilding -->
     <techLevel>Neolithic</techLevel>
     <tab>RimRoads_Tab</tab>
-    <tags>
-      <li>ta-ignore</li>
-    </tags>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="RimRoads_Research">
